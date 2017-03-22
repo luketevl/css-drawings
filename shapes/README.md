@@ -180,3 +180,33 @@
 ```
 
 > [Example](http://codepen.io/luketevl/pen/BWdGrP)
+
+
+## POLYGONS
+# HEXAGON
+- Using **border** with **::after** and **::before**
+```css
+.hexagon {
+  position: relative;
+  width: 500px;
+  height: 250px;
+  margin: 144px auto;
+  background-color: #ffcc29;
+}
+.hexagon::before, .hexagon::after {
+  content: "";
+  position: absolute;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+}
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 144.34px solid #ffcc29;
+}
+.hexagon::after {
+  top: 100%;
+  border-top: 144.34px solid #ffcc29;
+}
+
+```
+> [Example](http://codepen.io/luketevl/pen/bqMevV)
